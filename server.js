@@ -664,8 +664,8 @@ io.on("connect", (socket) => {
         {
           from: "MyTrello <anonimys.7712@mail.ru>",
           to: email,
-          subject: "Thank you for registering",
-          text: "Thank you for registering on my service",
+          subject: "Спаисобо за регистрацию",
+          text: "Благодарим за регистрацию на сервисе",
         },
         (error, info) => {
           if (error) return console.log(error);
@@ -701,9 +701,9 @@ io.on("connect", (socket) => {
       transporter.sendMail({
         from: "MyTrello <anonimys.7712@mail.ru>",
         to: email,
-        subject: "your data",
+        subject: "Сброс пароля",
         text:
-          "link to reset your password\n you have 30 minutes\n " +
+          "Ваша ссылка для сброса пароля\n ссылка действительна 30 минут\n " +
           "http://localhost:3000/" +
           user.resetToken +
           "/reset/",
