@@ -704,7 +704,7 @@ io.on("connect", (socket) => {
         subject: "Сброс пароля",
         text:
           "Ваша ссылка для сброса пароля\n ссылка действительна 30 минут\n " +
-          "http://localhost:3000/" +
+          "https://mytrello-backend.onrender.com/" +
           user.resetToken +
           "/reset/",
       });
